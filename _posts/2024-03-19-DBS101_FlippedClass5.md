@@ -84,11 +84,12 @@ Below is an example of how we can remove a transitive dependency:
 If we have a table where "Employee_ID" is the primary key and "Department_Name" depends on "Department_ID" and "Manager_Name" depends on "Manager_ID." but "Manager_ID" itself depends on "Department_ID". This creates a transitive dependency:
 
 Original Table "Employee_Details":
-Employee_ID|	Department_ID|	Department_Name|	Manager_ID|	Manager_Name
------------|-----------------|-----------------|--------------|---------------
-1	       | 101	         |Sales            |201           |John
-2	       |102	             |Marketing	       | 202 	      |Alice
-3	       |101          	 |Sales	           |203           |Bob
+
+Employee_ID|	Department_ID|	Department_Name|	Manager_ID|	Manager_Name|
+-----------|-----------------|-----------------|--------------|-------------|
+1	       | 101	         |Sales            |201           |John         |
+2	       |102	             |Marketing	       | 202 	      |Alice        |
+3	       |101          	 |Sales	           |203           |Bob          |
 
 New Table "Department":
 
