@@ -12,7 +12,7 @@ This flipped class we discussed about the five different types of normal form. B
 We were divided into 4 different groups and the first group was given the task of presenting about the first and second normal forms(1NF and 2NF). As we were the first group we shared that:
 
 1. ### The first normal form(1NF) 
-is basically the first step of the normalization process. 1NF is used to make the tables easier to extend and to retrive data from it whenever required. There are 4 rules we need to follow to design the database:
+is basically the first step of the normalization process. 1NF is used to make the tables easier to extend and to retrieve data from it whenever required. There are 4 rules we need to follow to design the database:
 
  - Single valued attributes: each column should have a single value.
  - Attribute domain should not change:each values in the column should be of the same type.
@@ -29,15 +29,15 @@ Below is an example of how we can convert a non-1NF table into 1NF form
     |2	        |Alice |English, History |
     |3	        | Bob  |Math,English, Art|
 
-- To convert the table into 1NF form we need to seperate the multivalued attribute to different rows.
+- To convert the table into 1NF form we need to separate the multi-valued attribute to different rows.
 
      Student ID| Name | Courses         
     -----------|------|---------
-    1	       | John |Math     
+    1	         | John |Math     
     1          |John  |Science
-    2	       |Alice |English, 
+    2	         |Alice |English, 
     2          |Alice |History 
-    3	       | Bob  |Math
+    3          | Bob  |Math
     3          | Bob  |English
     3          |Bob   | Art
 
@@ -87,9 +87,9 @@ Original Table "Employee_Details":
 
 Employee_ID|	Department_ID|	Department_Name|	Manager_ID|	Manager_Name|
 -----------|-----------------|-----------------|--------------|-------------|
-1	       | 101	         |Sales            |201           |John         |
-2	       |102	             |Marketing	       | 202 	      |Alice        |
-3	       |101          	 |Sales	           |203           |Bob          |
+  1	       |101	             |Sales            |201           |John         |
+  2	       |102	             |Marketing	       |202 	        |Alice        |
+  3	       |101          	   |Sales	           |203           |Bob          |
 
 New Table "Department":
 
@@ -102,9 +102,9 @@ New Table "Employee":
 
 Employee_ID	|Department_ID	|Manager_ID
 ------------|---------------|------------
-1	        |101         	|201
-2	        |102	        |202
-3	        |101	        |203
+  1	        |101         	|201
+  2	        |102	        |202
+  3	        |101	        |203
 
 By doing this, we removed the transitive dependency because "Manager_Name" no longer indirectly depends on "Department_ID" through "Manager_ID.".
 
