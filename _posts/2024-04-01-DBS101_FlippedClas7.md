@@ -1,6 +1,6 @@
 ---
-Title: DBS101 Flipped class 6
-categories: (DBS101,Flipped_class 6)
+Title: DBS101 Flipped class 7
+categories: (DBS101,Flipped_class 7)
 tags: (DBS101,Nonrelational Databases)
 ---
 ## Topic: Database Storage Structures
