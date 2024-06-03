@@ -75,6 +75,32 @@ Locks can be applied at various levels of granularity:
 
 <b>Optimistic Locking:</b> Assumes conflicts are rare, so it checks for conflicts before committing the transaction.
 
+### locking in practice 
+
+![lock](/assets/img/lock.png)
+
+![lock](/assets/img/lock1.png)
+
+#### SHARE Mode:
+Allows read and schema modification operations but not data modification operations within the same transaction.
+
+![lock](/assets/img/lock2.png)
+
+#### EXCLUSIVE Mode: 
+Allows full access (read, write,delete) to the table, blocking all other transactions.
+
+![lock](/assets/img/lock3.png)
+
+![lock](/assets/img/lock4.png)
+
+#### FOR UPDATE: 
+Acquires an exclusive lock on the selected rows, allowing modifications on those rows.
+
+#### FOR SHARE:
+Acquires a shared lock on the selected rows,preventing other transactions from acquiring exclusive locks but allows updates within the same transaction.
+
+![lock](/assets/img/lock5.png)
+
 ### Timestamp Ordering Concurrency Control
 Timestamp Ordering Concurrency Control is a method used in databases to manage transactions and ensure they occur in a consistent and conflict-free manner.
 
