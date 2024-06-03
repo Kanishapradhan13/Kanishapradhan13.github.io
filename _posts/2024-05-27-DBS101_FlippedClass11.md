@@ -24,7 +24,7 @@ Different types of locks provide different levels of control over the data:
 
 ### Two-Phase Locking (2PL) Protocol
 
-Two-phase locking is a common concurrency control method. Even though 2PL ensures serializability but can lead to deadlocks.
+Two-phase locking is a common concurrency control method. Even though 2PL ensures <b>serializability</b> but can lead to deadlocks.
 
 - Growing Phase: A transaction may obtain locks but not release any.
 
