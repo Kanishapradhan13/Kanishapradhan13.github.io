@@ -8,7 +8,7 @@ tags: (DBS101,Concurrency Control )
 
 # Concurrency Control 
 
-![concurrencycontrol](/assets/img/image2.png)
+![concurrencycontrol](/assets/img/concurrency.png)
 
 Locks play a crucial role in concurrency control within database management systems (DBMS). They help ensure data integrity and consistency when multiple transactions are executed simultaneously.
 
@@ -44,7 +44,7 @@ An edge from process Pi to Pj indicates Pi is waiting for a resource held by Pj.
 
 A cycle in this graph is a direct indication of deadlock.
 
-![wfg](/assets/img/image.png)
+![wfg](/assets/img/wfg.png)
 
 ### Deadlock Prevention
 Necessary Conditions for Deadlock
@@ -54,7 +54,7 @@ Necessary Conditions for Deadlock
 - No Preemption: Resources cannot be forcibly taken from processes holding them.
 - Circular Wait: A closed chain of processes exists such that each process holds at least one resource needed by the next process in the chain.
 
-![holdandwait](/assets/img/image1.png)
+![holdandwait](/assets/img/holdnwait.png)
 ### Lock Granularity
 Locks can be applied at various levels of granularity:
 
