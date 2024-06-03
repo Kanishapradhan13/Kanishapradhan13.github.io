@@ -14,7 +14,7 @@ Locks play a crucial role in concurrency control within database management syst
 
 When multiple transactions access and modify the database concurrently, locks ensure that the database remains in a consistent state where it prevent two transactions to modify at the same data simultaneously, which could lead to inconsistencies.
 
-Locks help maintain the ACID properties of transactions:
+Locks help maintain the ACID properties of transactions
 
 Different types of locks provide different levels of control over the data:
 
